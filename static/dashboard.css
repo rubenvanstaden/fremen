@@ -16,6 +16,45 @@ p {
     color: #DCD7BA;
 }
 
+#list {
+    background-color: #2A2A37;
+}
+
+.cd {
+  font-style: italic;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+#elixir {
+  border: thin solid #007e7e;
+  width: 200px;
+  padding: 0px 20px 20px 20px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 1;
+  float: right;
+}
+
+#elixir h2 {
+    color: #7E9CD8;
+}
+
+#elixirs a:link {
+  color: #007e7e;
+}
+
+#elixirs a:visited {
+  color: #333333;
+}
+
+#elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
+
 #guarantee {
     border-color: black;
     border-width: 1px;
