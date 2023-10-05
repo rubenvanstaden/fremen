@@ -9,7 +9,6 @@ func main() {
 
     fs := http.FileServer(http.Dir("./static"))
     http.Handle("/static/", http.StripPrefix("/static/", fs))
-
     // Create a template for the HTML page.
     tmpl := template.Must(template.ParseFiles("index.html"))
 
