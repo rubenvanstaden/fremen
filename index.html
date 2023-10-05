@@ -1,47 +1,172 @@
 <!doctype html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home page</title>
-      <link type="text/css" rel="stylesheet" href="static/dashboard.css">
-   </head>
-   <body>
-      <h1>Welcome to the New and Improved Head First Lounge</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>Starbuzz Coffee - Blog</title>
+    <link type="text/css" rel="stylesheet" href="static/dashboard.css">
+  </head> 
 
-      <p id="guarantee">
-        Our guarantee: at the lounge, we're committed to providing
-        you, our guest, with an exceptional experience every time you visit. Whether you're just stopping by to check in on email
-        over an elixir, or are here for an out-of-the-ordinary dinner, you'll find our knowledgeable service staff pay attention to every detail. If you're not fully satisfied, have a Blueberry Bliss Elixir on us.
-        </p>
+  <body>
+    <header class="top">
+      <img id="headerLogo"
+           src="images/headerLogo.gif" alt="Starbuzz Coffee header logo image">
+      <img id="headerSlogan"
+          src="images/headerSlogan.gif" alt="Providing all the caffeine you need to power your life.">
+    </header>
 
-    <ul id="list">
-        <li><span class="cd">Buddha Bar</span>, <span class="artist">Claude Challe</span></li> <li>When It Falls, Zero 7</li>
-        <li>Earth 7, L.T.J. Bukem</li>
-        <li>Le Roi Est Mort, Vive Le Roi!, Enigma</li>
-        <li>Music for Airports, Brian Eno</li>
-    </ul>
+	<nav>
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li class="selected"><a href="blog.html">BLOG</a></li>
+		<li><a href="">INVENTIONS</a></li>
+		<li><a href="">RECIPES</a></li>
+		<li><a href="">LOCATIONS</a></li>
+	</ul>
+	</nav>
 
-    <div id="elixir">
-      <h2>Weekly Elixir Specials</h2>
+	<div id="tableContainer">
+	<div id="tableRow">
 
-      <p>
-         Join us any evening for refreshing 
-         <a href="beverages/elixir.html">elixirs</a>, 
-         conversation and maybe a game or two of 
-         <em>Dance Dance Revolution</em>.  
-         Wireless access is always provided;  
-         BYOWS (Bring Your Own Web Server).
+	<section id="drinks">
+		<h1>BEVERAGES</h1>
+			<p>House Blend, $1.49</p>
+			<p>Mocha Cafe Latte, $2.35</p>
+			<p>Cappuccino, $1.89</p>
+			<p>Chai Tea, $1.85</p>
+		<h1>ELIXIRS</h1>
+			<p>
+				We proudly serve elixirs brewed by our friends
+				at the Head First Lounge.
+			</p>
+			<p>Green Tea Cooler, $2.99</p>
+			<p>Raspberry Ice Concentration, $2.99</p>
+			<p>Blueberry Bliss Elixir, $2.99</p>
+			<p>Cranberry Antioxidant Blast, $2.99</p>
+			<p>Chai Chiller, $2.99</p>
+			<p>Black Brain Brew, $2.99</p>
+	</section>
+
+	<section id="blog">
+	<article>
+	<header>
+		<h1>Starbuzz launches... Tweet Sip</h1>
+		<time datetime="2012-05-03">5/3/2012</time>
+	</header>
+	<p>
+		As promised, today I'm proud to announce that Starbuzz
+		Coffee is launching the Tweet Sip cup, a special Starbuzz 
+		Coffee cup that tweets each time you take a sip! Check 
+		out my video of our new invention.
+	</p>
+	</article>
+
+	<article>
+	<header>
+		<h1>Starbuzz meets social media</h1>
+		<time datetime="2012-03-12">3/12/2012</time>
+	</header>
+	<p>
+		Here at Starbuzz we're embracing the social media craze. 
+		In fact, we're going further than any of our competitors and 
+		we're very close to announcing a revolutionary new product that 
+		links your coffee drinking directly to your social 
+		network. Forget "checking in"; we're going way beyond that, and 
+		with this new product every sip of smooth, aromatic, hot Starbuzz 
+		blend is going to to be shared with your social network.
+	</p>
+	<p>
+		Sound like science fiction?  It's not; I'm already 
+		testing our final prototype social network cup as I write this, 
+		which links you, the drinker, right to your favorite social 
+		networks.  We've made a huge investment to make this happen 
+		and we've created a reusable coffee cup complete with RFID, 
+		NFC, Bluetooth, and Wifi (not to mention a few more things the tech 
+		folks know about, because hey, I'm just the coffee guy).
+	</p>
+	<p>
+		So, keep your eyes out for this amazing new cup. And I'll 
+		be releasing a video teaser soon to tell you all about this 
+		new invention, straight from Starbuzz Coffee.
+	</p>
+	</article>
+
+	<article>
+	<header>
+		<h1>Starbuzz uses computer science</h1>
+		<time datetime="2012-03-10">3/10/2012</time>
+	</header>
+	<p>
+		Have you ever noticed how efficient a Starbuzz Coffee 
+		house is? The lines alway move fast, and despite the 
+		astronomical number of different drinks any customer can 
+		order, we have your drink up, hot (or cold if that's the 
+		way you want it) and ready in seconds. How do we do it? 
+	</p>
+	<p>
+		To pull this off, we take advantage of the latest and 
+		greatest in computer science.  In fact, we train 
+		our staff to be one big distributed computer.  The cashiers 
+		create the orders for the distributed computer, complete 
+		with your name and the drinks special instructions.  Then 
+		our specialized drink makers grab the next cup
+		and go about working on your order until it's finished.  
+	</p>
+	<p>
+		With this design, we are able to horizontally scale our operation 
+		any time we want.  All we need to do is add more cashiers 
+		and drink makers (not to mention a fair amount of support 
+		staff you never see) as the customer flow grows.
+	</p>
+	</article>
+
+	<article>
+	<header>
+		<h1>Most unique patron of the month	</h1>
+		<time datetime="2012-02-18">2/18/2012</time>
+	</header>
+	<p>
+		Our most unique patron of the month award goes to a 
+		customer in Poulsbo, Washington, whose daily morning order 
+		is a "six-splenda, no-foam, 130-degree non-fat-soy latte, 
+		with the splenda stirred in before the milk is added." Do we 
+		have unique customers or what? 
+	</p>
+	</article>
+	</section>
+
+    <aside>
+      <p class="beanheading">
+        <img src="images/bag.gif" alt="Bean Machine bag">
+        <br>
+            ORDER ONLINE
+            with the 
+            <a href="form.html">BEAN MACHINE</a>
+        <br>
+        <span class="slogan">
+            FAST <br>
+            FRESH <br>
+            TO YOUR DOOR <br>
+        </span>
       </p>
-    </div>
-
-      <h2>Directions</h2>
       <p>
-         You'll find us right in the center 
-         of downtown Webville.  If you need help finding
-         us, check out our 
-         <a href="about/directions.html">detailed directions</a>. 
-         Come join us!
+        Why wait?  You can order all our fine coffees right from the Internet with our new, 
+        automated Bean Machine.  How does it work?  Just click on the Bean Machine link, 
+        enter your order, and behind the scenes, your coffee is roasted, ground 
+        (if you want), packaged, and shipped to your door.
       </p>
-   </body>
+    </aside>
+
+	</div> <!-- tableRow -->
+	</div> <!-- tableContainer -->
+
+    <footer>
+      &copy; 2012, Starbuzz Coffee
+      <br>
+      All trademarks and registered trademarks appearing on 
+      this site are the property of their respective owners.
+    </footer>
+
+  </body>
 </html>
+
+

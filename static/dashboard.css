@@ -1,73 +1,104 @@
-body {
-    background-color: #1F1F28;
-    line-height: 1.6em;
+body { 
+  background-color: 	#1F1F28;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
 }
 
-h1, h2 {
-    font-family: sans-serif;
-    color: gray;
+header.top {
+  background-color: #2A2A37;
+  margin: 10px 10px 0px 10px;
+  height:           108px;
+}
+
+header.top img#headerSlogan {
+	float: right;
+}
+
+div#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+div#tableRow {
+	display: table-row;
+}
+
+section#drinks {
+    display: table-cell;
+    background-color: #efe5d0;
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* added section#blog for blog */
+section#main, section#blog {
+  display: table-cell;
+  background:       #efe5d0 url(home.jpeg) top left;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+aside {
+    border-radius: 15px;
+    display: table-cell;
+    background:       #efe5d0 url(blue.jpg) bottom right;
+    font-size:        105%;
+    padding:          15px;
+    vertical-align: top;
 }
 
 h1 {
-    border-bottom: 1px solid black;
+  font-size:        120%;
+  color:            #954b4b;
 }
 
-p {
-    color: #DCD7BA;
+h2 { font-size: 110%; }
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+    background-color: #363646;
+    text-align:       center;
+    line-height:      1.8em;
 }
 
-#list {
-    background-color: #2A2A37;
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
 }
 
-.cd {
-  font-style: italic;
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
 }
 
-.artist {
-  font-weight: bold;
+nav {
+    background-color: #efe5d0;
+	margin: 10px 10px 0px 10px;
 }
 
-#elixir {
-  border: thin solid #007e7e;
-  width: 200px;
-  padding: 0px 20px 20px 20px;
-  margin-left: 20px;
-  text-align: center;
-  line-height: 1;
-  float: right;
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
 }
 
-#elixir h2 {
-    color: #7E9CD8;
+nav ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;
 }
 
-#elixirs a:link {
-  color: #007e7e;
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
 }
 
-#elixirs a:visited {
-  color: #333333;
-}
-
-#elixirs a:hover {
-  background: #f88396;
-  color: #0d5353;
-}
-
-#guarantee {
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    background-color: #2A2A37;
-    padding: 25px;
-    padding-left: 80px;
-    margin: 30;
-    background-image: url(home.jpeg);
-    background-repeat:   no-repeat;
-    background-position: top left;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 15px;
+nav ul li.selected {
+	background-color: #c8b99c;
 }
